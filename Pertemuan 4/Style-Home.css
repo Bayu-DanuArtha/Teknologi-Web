@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wallpaper{
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family:Courier;
+    color: #364F6B ;
+}
+.menu{
+    float: right;  
+
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    line-height: 80px;
+    display: flex;
+    position:relative;
+    top: 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid #364F6B;
+    z-index: 1;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color: #364F6B;
+    font-weight:bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+section{
+    margin-top: 90px;
+    display: flex;
+    margin-bottom: 50px;
+
+}
+.collom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.description .collom{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria,sans-serif;
+    color: #364F6B;
+}
+
+h2{
+    font-family: Cambria,sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364F6B;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.signup{
+    background: #3F72AF;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.signup:hover{
+    background: #FC5185;
+    text-decoration: none;
+}
+
+a.learnmore{
+    background: #FC5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+a.learnmore:hover{
+    background: #3F72AF;
+    text-decoration: none;
+}
+p{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 0px;
+} 
+.center{
+    text-align: center;
+    width: 100%;
+
+}
+.tutor-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-tutor{
+    width: 40%;
+    margin: 0 auto;
+}
+.card-tutor img{
+    width: 60%;
+    border-radius: 80%;
+}
+.card-tutor p{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: #364F6B;
+}
+
+.partner-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-partner{
+    width: 40%;
+    margin: 0 auto;
+}
+.card-partner img{
+    width: 60%;
+}
+#contact{
+    background: #DEDEDE;
+    padding: 50px 0px 50px 0px;
+}
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+h3{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #364F6B;
+    width: 100%;
+    line-height: 50px;
+}
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 40px;
+}
+
+@media (max-width: 900px){
+    .wallpaper{
+        width: 50%;
+    }
+    .logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 40px;
+    }
+    nav .menu ul li{
+        display: inline-block;
+        float: none;
+        margin-bottom: 10px;
+    }
+    section{
+        display: block;
+    }
+    section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .card-tutor{
+        width: 50%;
+    }
+    .card-partner{
+        width: 50%;
+    }
+    .card-partner img{
+        align-content: center;
+    }
+}
+
+/* @media (max-width: 600px){
+    .wallpaper{
+        width: 50%;
+    }
+    .logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 40px;
+    }
+    nav .menu ul li{
+        display: inline-block;
+        float: none;
+        margin-bottom: 10px;
+    }
+    section{
+        display: block;
+    }
+    section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .card-tutor{
+        width: 50%;
+    }
+    .card-partner{
+        width: 50%;
+    }
+} */

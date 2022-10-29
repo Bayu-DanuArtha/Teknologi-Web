@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Arithmetic Series</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./output.css" />
+  </head>
+  <body class="bg-slate-300">
+    <h1 class="text-center font-bold text-3xl pt-10 pb-2 font-mono">Arithmetic Series Program</h1>
+
+    <div class="bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center rounded-2xl max-w-lg my-10 border border-black mx-auto p-5 shadow-xl">
+      <form>
+        <p class="p-3">
+          <snap class="text-black font-mono font-semibold"> First Tribe </snap>
+          <input
+            class="shadow appearance-none border rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline font-mono"
+            type="number"
+            id="suku1"
+            value="0"
+            onkeyup="hitung()"
+          />
+        </p>
+        <p class="p-3">
+          <snap class="text-black font-semibold font-mono"> Difference between tribes </snap>
+          <input
+            class="shadow appearance-none border rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline font-mono"
+            type="number"
+            id="beda"
+            value="0"
+            onkeyup="hitung()"
+          />
+        </p>
+        <p class="p-3">
+            <snap class="text-black font-semibold font-mono" > Wanted tribe </snap>
+            <input
+              class="shadow appearance-none border rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline font-mono"
+              type="number"
+              id="cari"
+              value="0"
+              onkeyup="hitung()"
+            />
+        </p>
+        <p class="p-3">
+            <snap class="text-black font-semibold font-mono inline" id="value"> </snap> 
+            <snap class="text-black font-semibold font-mono" id="hasil"> </snap> 
+      </form>
+      <button
+        class="bg-gradient-to-r from-lime-500 to-teal-400 hover:bg-violet-600 active:bg-violet-700  rounded-lg px-3 py-2 max-h-10 border-black font-mono"
+        onclick="submitdata()"
+      >
+        Submit
+      </button>
+      
+    </div>
+    <script type="text/javascript">
+        function submitdata(){
+            var suku1 = document.getElementById("suku1").value;
+            var beda = document.getElementById("beda").value;
+            var cari = document.getElementById("cari").value;
+            let next = (cari - 1)* beda;
+            var akhir = parseInt(next) + parseInt(suku1);
+           document.getElementById("value").innerHTML = " The value of the term " + cari;
+           document.getElementById("hasil").innerHTML = " is " + akhir;
+        }
+    </script>
+  </body>
+</html>
